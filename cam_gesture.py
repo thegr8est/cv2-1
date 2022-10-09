@@ -29,7 +29,7 @@ while(True):
     if keypress == ord("q"): # press q to quit
         break	
     if keypress == ord(" "): # press space to save the captured image
-        filename="left_"+str(count)+".jpg"
+        filename="_"+str(count)+".jpg"
         print(filename)
         gesture = cv2.resize(roi_gray, (96, 96), interpolation = cv2.INTER_CUBIC)
         cv2.imwrite(filename, gesture)
